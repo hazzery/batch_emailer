@@ -1,9 +1,10 @@
+from collections.abc import Iterable
+from email.message import Message
 import logging
 import smtplib
 import socket
 import sys
-from collections.abc import Iterable
-from email.message import Message
+
 
 logger = logging.getLogger(__name__)
 
