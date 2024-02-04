@@ -57,24 +57,24 @@ def draft_email(email_config: dict[str, Any]):
     :param email_config: The email configuration from ``config.toml``.
     :return: A Message object.
     """
-    with open(email_config["email_content"]) as email_content_file:
-        email_body = email_content_file.read()
-
     try:
         sender = validate_email(email_config["sender"])
     except ValueError as error:
         logger.error(str(error))
         sys.exit(str(error))
 
-    logger.info("Emails being sent as %s", sender)
-
     subject: str = email_config["subject"]
+
+    with open(email_config["email_content"]) as email_content_file:
+        email_body = email_content_file.read()
 
     try:
         attachments = validate_filepaths(email_config["attachments"])
     except FileNotFoundError as error:
         logger.error(str(error))
         sys.exit(str(error))
+
+    logger.info("Emails being sent as %s", sender)
 
     return write_email(
         sender, (), subject, email_body, attachments
