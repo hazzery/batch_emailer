@@ -1,0 +1,15 @@
+[email]
+sender = "sender@domain.net"
+mailing_list = "mailing_list.txt"
+subject = "Python SMTP Test"
+email_content = "email_content.txt"
+attachments = [
+    "report.pdf",
+    "image.jpg"
+]
+
+[server]
+hostname = "smtp.domain.net"
+port_number = 587
+
+schedule_time = 09:00:00

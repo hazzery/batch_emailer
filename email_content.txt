@@ -1,0 +1,4 @@
+This email is a simple test using Python's smtplib to automate email sending.
+There can be as much text as you would like in this file.
+
+All content of this file is sent in the email's body
