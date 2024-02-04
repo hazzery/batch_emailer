@@ -8,6 +8,8 @@ It is used to send out an email to a mailing list once a day.
 All configuration of daily_email_report is specified in `config.toml`.
 The config file contains the following options:
 
+ - `schedule_time` - The time of day for the email to be scheduled.
+
 #### email
  - `sender` - Who the email is addressed from.
  - `mailing_list` - Filepath to the mailing list.
@@ -18,9 +20,6 @@ The config file contains the following options:
 #### server
  - `hostname` - The hostname of the SMTP server.
  - `port_number` - The port number the SMTP server is running on.
-
-####
- - `schedule_time` - The time of day for the email to be scheduled.
 
 ## How to run
 

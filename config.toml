@@ -1,3 +1,5 @@
+schedule_time = 09:00:00
+
 [email]
 sender = "sender@domain.net"
 mailing_list = "mailing_list.txt"
@@ -11,5 +13,3 @@ attachments = [
 [server]
 hostname = "smtp.domain.net"
 port_number = 587
-
-schedule_time = 09:00:00
