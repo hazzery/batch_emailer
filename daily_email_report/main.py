@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 def main():
     configure_logging()
 
-    with open("../config.toml", "rb") as config_file:
+    with open("config.toml", "rb") as config_file:
         config = tomllib.load(config_file)
 
     email_config: dict[str, Any] = config["email"]
