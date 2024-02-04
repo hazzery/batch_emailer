@@ -12,7 +12,7 @@ from .draft_email import draft_email
 logger = logging.getLogger(__name__)
 
 
-def main():
+def main() -> None:
     configure_logging()
 
     with open("config.toml", "rb") as config_file:

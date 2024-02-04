@@ -51,7 +51,7 @@ def write_email(
     return message
 
 
-def draft_email(email_config: dict[str, Any]):
+def draft_email(email_config: dict[str, Any]) -> Message:
     """Write an ``email.message.Message`` object with given configuration.
 
     :param email_config: The email configuration from ``config.toml``.
