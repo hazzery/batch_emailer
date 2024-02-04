@@ -19,7 +19,7 @@ The config file contains the following options:
  - `hostname` - The hostname of the SMTP server.
  - `port_number` - The port number the SMTP server is running on.
 
-
+####
  - `schedule_time` - The time of day for the email to be scheduled.
 
 ## How to run
